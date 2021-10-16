@@ -12,10 +12,7 @@ import plotly.graph_objects as go
 
 st.set_page_config(page_title="K-means Visualization App", page_icon="python.png", layout="wide")
 
-st.markdown("""
-**Author:** Cainã Max Couto da Silva  
-**LinkedIn:** [cmcouto-silva](https://www.linkedin.com/in/cmcouto-silva/)
-""")
+st.image("https://www.isb.edu/content/dam/sites/isb/about-isb/ISB_transparent_logo.png", width=400)
 
 st.header('**Visualizing K-means step-by-step with Python**')
 st.write("")
