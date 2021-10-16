@@ -78,25 +78,7 @@ The centroid initialization can be at random or optimized with an algorithm call
 At random initialization, we randomly choose K data points to use as our centroids, or we can place random centroids within the dimension of our data points. On the other hand, k-means++ aims to initialize the centroids as far as possible from each other. It's usually good because it avoids the bias of random initialization of the centroids (see K-means trap). Furthermore, kmeans++ usually reduces the number of needed interactions to reach the final centroid positions.
 
 Additionally, some applications run the K-means algorithm multiple times with different initialization start points, providing as output the one with the lesser variance within the groups. 
-	
-_**Notes:**_
 
----
-
-Data used in this application has been simulated with [`datasets.make_blobs()`](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_blobs.html) from [`scikit-learn`](https://scikit-learn.org/stable/index.html). Here, I've restricted the number of both observations (100) and variables (2) so that the application doesn't get slow and we can visualize the graphic bidimensionally.
-
-Furthermore, in the elbow method, only one run of K-means is executed per K (see [elbow method](https://www.oreilly.com/library/view/statistics-for-machine/9781788295758/c71ea970-0f3c-4973-8d3a-b09a7a6553c1.xhtml)), which can result in non-standard less of distortion, since some K's could be a result of a poor centroid initialization.
-
-Suggestions of critics? Message me via [LinkedIn](https://www.linkedin.com/in/cmcouto-silva/).
-
-_**Code availability:**_
-
----
-
-The scripts with the step-by-step implementation of K-means and this are available at GitHub:
-
-- [App repository](https://github.com/cmcouto-silva/kmeans-app-en_streamlit)
-- [Step-by-step K-means' script (no scikit-learn)](https://github.com/cmcouto-silva/kmeans-app-en_streamlit/blob/main/kmeans.py)
 
 &nbsp;
 """)
